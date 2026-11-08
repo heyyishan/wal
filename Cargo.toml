@@ -1,0 +1,16 @@
+[package]
+name = "forge-steal"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "A compact work-stealing thread pool for irregular workloads"
+
+[dependencies]
+crossbeam-deque = "0.8"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "scheduler"
+harness = false
